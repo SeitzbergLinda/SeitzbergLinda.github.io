@@ -32,6 +32,8 @@ margin:auto;
 font-size:16px;
 padding:10px;
 text-align:justify;
+letter-spacing: 2px;
+line-height: 110%;
 background:#555;
 border:solid 1px #666;
 color:#ffffff;
@@ -77,12 +79,14 @@ img{
 height:370px;
 	width:600px;
 	margin-bottom:45px;
-	margin-right:40px;
-	font-family:"Freestyle Script";
+	margin-left:15px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-weight: 400;
 	float:right;
 	font-size:30px;
-	color:#FF00FF;
+	color:#33FF33;
 	display:block;
+	list-style-type: none;
 	}
 	
 	a:link {
@@ -104,6 +108,3 @@ a:active {
     color: silver;
 }
 	
-a:link {
-    text-decoration: none;
-}
