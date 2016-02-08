@@ -104,3 +104,6 @@ a:active {
     color: silver;
 }
 	
+a:link {
+    text-decoration: none;
+}
