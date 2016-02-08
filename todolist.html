@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<link href="todolist.css" type="text/css" rel="stylesheet"/>
+<script src="angular.min.js"></script>
+<script src="todolist.js"></script>
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+<h2>Todo List</h2>
+
+<div class="todolist"><form ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" size="50" placeholder="Skriv här" required="">
+    <input type="submit" value="Vad ska du komma ihåg?">
+</form>
+
+<br>
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText">Läsa</span>
+</div>
+
+<p><button ng-click="remove()">Avklarad</button></p>
+
+
+
+</div>
+</body>
+</html>
