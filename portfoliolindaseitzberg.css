@@ -1,15 +1,17 @@
 body{
-	background-color:ffffff;
+	background-color:#555;
 	margin:0;
 	
 }
 
-.h1{
+h1{
 	font-size:25px;
 }
 
-.h2{
-	font-size:20px;
+h2{
+	font-size:30px;
+	font-family: 'Comic Sans MS', cursive;
+	line-height:100%;
 }
 
 .wrapper
@@ -23,8 +25,9 @@ body{
 
 div.panel, p.flip
 {
+
 height:auto;
-line-height: 30px;
+line-height:100%;
 margin:auto;
 font-size:16px;
 padding:10px;
@@ -39,13 +42,13 @@ div.panel
 {
 height:auto;
 display:none;
-font-size:20px;
+font-size:30px;
 padding:20px;
 }
 p.flip
 {
 cursor:pointer;
-font-size:50px;
+font-size:80px;
 text-align:center;
 display:block;
 padding:30px;
