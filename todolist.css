@@ -1,3 +1,9 @@
+body{
+	background-color:gray;
+	padding:25px;
+	margin:50px;
+}
+
 .todolist
 {
 	background-color:white;
