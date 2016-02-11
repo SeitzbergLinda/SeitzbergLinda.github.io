@@ -38,7 +38,6 @@ text-align:justify;
 letter-spacing: 2px;
 line-height: 110%;
 background:#555;
-border:solid 1px #666;
 color:#ffffff;
 border-radius:3px;
 }
@@ -79,7 +78,7 @@ img{
 {
 	
 
-height:370px;
+	height:370px;
 	width:700px;
 	margin-bottom:45px;
 	margin-left:15px;
