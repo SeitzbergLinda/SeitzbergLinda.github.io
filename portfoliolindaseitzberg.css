@@ -1,7 +1,7 @@
 body{
 	background-color:#555;
 	margin:0;
-	padding:20px;
+	
 	
 }
 
@@ -22,7 +22,7 @@ h2{
 	margin-top:50px;
 	height:auto;
 	width:1200px;
-	padding:2px;
+	padding:30px;
 }
 
 div.panel, p.flip
