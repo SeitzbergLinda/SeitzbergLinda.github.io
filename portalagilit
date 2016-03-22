@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link href="portfolio.css" rel="stylesheet" type="text/css"/>
+     <link href="bootstrap-3.3.6/bootstraphoover.css" type="text/css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../Chatapp/bootstrap-3.3.6/font-awesome.min.css" />
+
+    <title>Linda Seitzberg - portfolio</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap-3.3.6/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="bootstrap-3.3.6/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="bootstrap-3.3.6/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  
+</head>
+
+  <body>
+  
+  
+<nav class="navbar navbar-default"><button type="button" style="float:right" 
+  class="btn btn-default dropdown-toggle btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Inloggad som: Linda Sahlgren<span class="caret"></span>
+  </button>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header"> 
+    <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <ul class="dropdown-menu">
+  <li>Resurser</li>
+  <li>Anställda</li>
+ <li>Resurser</li>
+  <li>Anställda</li>
+  
+  </ul>
+  <li role="presentation"><a href="#">Journal</a></li>
+  <li role="presentation"><a href="#">Kalender</a></li>
+  <ul class="dropdown-menu">
+  <li>schemaläggning</li>
+  <li>Tidstyper</li>
+	<li>Resurser</li>
+	<li>Patienter</li>
+	<li>Besök</li>
+
+
+</ul>
+</div>
+</div>
+
