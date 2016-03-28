@@ -22,5 +22,31 @@ border-radius: 2px;
 box-shadow: 5px 5px 10px rgba(0,0,0, 0.5);
 }
 
-.container
-{
+	
+	   #map-outer {  height: 440px; 
+	  				padding: 20px; 
+					border: 2px solid #CCC; 
+					margin-bottom: 20px; 
+					background-color:#FFF }
+	  #map-container { height: 400px }
+	  @media all and (max-width: 991px) {
+		#map-outer  { height: 650px }
+	
+		}
+		.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+    .btn-facebook {
+    background: #3b5998;
+    border-radius: 0;
+    color: #fff
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff
+}
