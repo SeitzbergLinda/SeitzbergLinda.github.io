@@ -1,6 +1,18 @@
-body
-{
-	
+.skill_bar {
+  width:900px;
+  height:60px;
+  background:fuchsia;
+  margin-bottom:5px;
+  font-family:'Indie Flower', cursive;
+   color:white;
+   font-size:25px;
+   
+}
+
+.skill_bar_progress {
+  width:0%;
+  height:100%;
+  background:#00f;
 }
 
 p
