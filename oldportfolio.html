@@ -1,285 +1,706 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="portfoliolindaseitzberg.css" type="text/css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 
-</head>
-<script> 
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link href="hinge.css" rel="stylesheet" type="text/css"/>
+<link href="animate.css" rel="stylesheet" type="text/css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.2/scrollreveal.min.js"></script>
+<script src="jquery.min.js"></script>
+
+<script src="wowegen.js" type="application/javascript"/>
+ <script>
+              new WOW().init();
+              </script>
+
+<script>var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();</script>
+
+<script>
 $(document).ready(function(){
-$(".flip").click(function(){
-$(".panel").fadeToggle(200);
-
-});
+  $('.skill_one').animate({width:'85%'}, 3000);
+  $('.skill_two').animate({width:'95%'}, 3000);
+  $('.skill_three').animate({width:'95%'}, 3000);
+  $('.skill_four').animate({width:'30%'}, 3000);
+  $('.skill_five').animate({width:'80%'}, 3000);
 });
 </script>
+<style>
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(2); /* Safari and Chrome */
+    -moz-transform:scale(2); /* Firefox */
+    -ms-transform:scale(2); /* IE 9 */
+    -o-transform:translatZ(0) scale(2); /* Opera */
+    transform:translatZ(0) scale(2);
+}
+  
+  
+.grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%); 
+}
+</style>
 
+</head>
 <body>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <h1 style="color:black; font-family:Cookie; font-size:45px"> Linda Seitzberg</h1> <i class="fa fa-phone" style="margin-right:100px; color:white"> +46 (0)73 633 18 04</i></div></nav>
+    
+                
+  <div class="jumbotron" style="background-image:url('color-1241879_1920.jpg'); background-repeat:no-repeat; height:320px; background-color: #BAD1BA;
+border-radius: 20px;box-shadow: 5px 5px 10px rgba(0,0,0, 0.5)">
+</div>
+  <div class="container" >
+  <div id="fooContainer">
+  <div class="foo"> 
+<p style="text-align:center; font-family:Cookie; font-size:45px" class="wow wobble">
+Hej</p>
+  </div>
+  </div>
+  <div>
+  <div class="container">  
+  <div class="row">
+  <div class="col-md-9 col-md-push-3"><p style="font-family:'Indie Flower', cursive; font-size:25px">Jag har alltid fascinerats av människan, hur vi tänker och fungerar,
+ och jag har alltid varit nyfiken och intresserad av webben! Så när jag hittade utbildningen Kognitionsvetenskap vid Högskolan i Skövde så var det självklart att jag skulle bli kognitionsvetare.
+ Kunskapen om MDI gör mig bara ännu mer nyfiken och jag läser allt jag kommer över. </p>
+ <p style="font-family:'Indie Flower', cursive; font-size:25px">Jag blev klar sommaren 2015 och studerar idag FrontEnd,
+  Javascript på Lernia, distans vilket ger mig en fördjupning i MDI och en djupare förståelse för interaktionsdesign. Det är en sak att designa
+   och en helt annan att koda. Min ambition är att skapa lösningar där andra ser problem. Att se helheten i projekt är viktiga, från kundens önskan
+    till levererad slutprodukt där målet är att slutanvändaren får en optimal kundresa.</p><br></div>
+  <div class="col-md-3 col-md-pull-9"><img src="http://i.imgur.com/gouKUKk.jpg" class="img-responsive"/></div>
+  <br>
+ <div class="col-md-6 col-md-offset-3 img-hover wow tada data-wow-duration=5s" style="margin-top:150px;"data-wow-delay="5s"><img src="http://i.imgur.com/73X7jT8.jpg" style="margin-left:auto;margin-right:auto" class="img-responsive" alt="Responsive image"/></div>
+ 
+ </div></div>
+ 
+ <div class="container" style="margin-top:100px">
+ <div class="row">
+  <div class="col-md-8"> <p style="font-family:'Indie Flower', cursive; font-size:25px; margin-top:100px"> 
+Med arbetslivserfarenhet från både försäljning, marknadsföring, vård och omsorg har jag alltid satt kundservice i centrum
+ vilket gör att jag är mycket serviceinriktad. Inom interaktionsdesign är det viktigt att ha ett nära samarbete med användare och slutkund i projekt och min erfarenhet har
+ gjort mig trygg i mig själv och min kompetens tillsammans med ett serviceinriktat sinne.</p><br>
+ <br></div>
+ 
+  <div class="col-md-4">
+  <iframe id="vp1KNqxQ" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1441964844&f=KNqxQRxswVMI4mmIsHOnWQ&d=0&m=p&r=360&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" padding="20px" align="left" margin="10px" allowfullscreen></iframe>
+</div>
+</div></div>
 
 
-<p class="flip" margin-top="75px"><a href="#Presentation">Presentation</a><a name="Presentation"></a>
-<div class="panel">
-<div class="wrapper"> 
-<table>
-<tbody><tr>
-<td valign="top"><iframe id="vp1KNqxQ"  title="Video Player"  width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1441964844&f=KNqxQRxswVMI4mmIsHOnWQ&d=0&m=p&r=360&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" padding="20px" align="left" margin="10px" allowfullscreen></iframe>
-</td>
-<td>
-</td>
-</tr>
-</tbody><p>
-	
-I did a movie that shows how much my family represents my personality. 
-However, I haven´t much pictures of myself because it´s (almost) always me who is behind the camera.</p>
 
- <ul class="short" display="block">
-         	<li><strong>Name:</strong> Linda Seitzberg</li>
-         	<li><strong>Lives: </strong> in a small village outside Västerås</li>
-         	<li><strong>Family:</strong> Husband, three children (8, 6, 4) and a Viszla.</li>
-         	<li><strong>Hobbies:</strong> Loves to plan and create new projects (inside, outside, on the house)</li>
-         	 <li><strong>Member in: <a href="http://www.stimdi.se/">Stimdi</a></strong></li>
-         	
-        </ul></table> </div>
+
+<div class="container" style="margin-top:150px">
+<h1 style="text-align:center; font-family:'Didact Gothic', sans-serif;" class="wow bounceInLeft">Ett urval av mina projekt</h1>
+<div class="row" style="margin-top:50px">
+  <div class="col-md-4">	
+<h2>Designa & koda 2d-spel</h2>
+<p>Mitt spel går ut på att en liten gubbe ska samla så många morötter han kan. Spelet vänder sig till barn mellan 5-8 år. Tanken var från början att 
+det skulle vara en vegetarian som samlade frukt, bär och grönsaker medan köttbitar får spelarens hälsa-barometer att sjunka.</p> <br>
+ <img src="http://i.imgur.com/fYYJpeI.jpg?1" class="img-responsive" alt="Responsive image" style="background-color: #BAD1BA;
+border-radius: 20px;
+box-shadow: 5px 5px 10px rgba(0,0,0, 0.5)"/>
 </div>
 
-
-<p class="flip"><a href="#Portfolio"> Portfolio</a><a name="Portfolio"></a></p>
-
-<div class="panel">
-<div class="wrapper">
-<h2>Infographic</h2>
-<a href="http://seitzberglinda.github.io/infographic.html"> <img src="http://i.imgur.com/FwP3QDX.jpg?1"/></a>
-<p> 
+  <div class="col-md-4">
+<h2>Interactive Infographic</h2><p> 
 Väl utformade infographics används för att förenkla ett 
 komplicerat ämne eller göra något som annars är tråkigt 
 till något fängslande. Att använda sig av interaktivt 
 innehåll i sina infographics har blivit en av de mest 
 effektiva strategierna inom digital marknadsföring. </p>
-
-<p>En infographic är visuellt engagerande och skapad utifrån 
-ett ämne som är tilltalande för din målgrupp. 
-Syftet med denna uppgift är att testa på hur det är att 
-redovisa ett visuellt arbete i ett format som tillåter struktur, 
-presentation och interaktion på ett sätt som sträcker sig 
-utöver den “vanliga hemsidan”. 
- </p>
-
-</div>
-<div class="wrapper">
-	
-	<h2>Ny Design, prototyp</h2>
-<a href="http://seitzberglinda.github.io/TentamenFRO15/"><img src="http://i.imgur.com/FYm7M5C.jpg?2"/></a><p>Tentamen i kursen Interaktionsdesign och användbarhet bestod i att kritiskt granska en landingpage och dokumentera detta.
-	Förslag på ny design, layout och grafisk profil skapades för att matcha gällande designprinciper. </p>
+	<img src="http://i.imgur.com/oPdJ6VF.jpg?1" class="img-responsive" alt="Responsive image"/>
 </div>
 
-<div class="wrapper">
-<h2>Spel</h2>
+<div class="col-md-4">
 
-<a href="http://seitzberglinda.github.io/spel/catchcarrot.html"><img src="http://i.imgur.com/nn1kjyH.jpg"></a>
-
-<p>Att designa ett spel var en mycket rolig uppgift. För den här uppgiften har jag använt mig av <a href="http://phaser.io/">Phaser.</a>
-Det tar alltid tid att sätta sig in andras kod, men Phaser har ett väldigt lättöverskådlig struktur.</p> <p>Phasers grundläggande fundament betår av
-var game = new Phaser, function preload, function create, function update. Strukturen gör att man som nybörjare får en klar överblick och ganska snart 
-kände jag mig hemma och bekväm med sättet att koda.</p> Det finns mycket roliga och inpirerande spel, både att spela och att lära sig av på deras hemsida. </p>
-Mitt spel går ut på att en liten gubbe ska samla så många morötter han kan. Spelet vänder sig till barn mellan 5-8 år. Tanken var från början att 
-det skulle vara en vegetarian som samlade frukt, bär och grönsaker medan köttbitar fick spelares hälsa-barometer att sjunka. Än så länge fungerar 
-spelet endast genom att samla morötter, men jag kommer att utveckla detta spel allteftersom. Dessutom ska en avslutande effekt och moment implementeras.
-Jag gillar detta starkt och fick mersmak och ska fortsätta med några projekt. </p>
-
-</div>
-
-<div class="wrapper">
-	<h2>Grafisk profil</h2>
-<a href="http://seitzberglinda.github.io/visitmeonline.html"><img src="http://i.imgur.com/R9DTMpc.jpg"/></a></p>
-
- 
- <p>Grupparbete - skapa affärsidé, logotyp, grafisk form och utveckla en hemsida. I uppgiften arbetade vi i grupp utifrån projektmetodiken Scrum. 
-Scrum är en “agil” projektmetodik som många utvecklingsföretag idag följer.</p>
-<p>En grafisk profil är de regler som beskriver vilka färger och font/typsnitt som ska användas när 
-företaget kommunicerar. Detta tas fram för att få en enhetlig stil. Även användandet av 
-företagets logotyp är reglerad i den grafiska profilen.  
- </p> 
- <p>Det fiktiva företaget tillhandahåller digitala visitkort, både miljövänligt och användbart. Företag kan enkelt, genom att registrera sig på sidan, skapa och använda
- sitt digitala visitkort som de antingen kan visa upp i mobilen och skicka enkelt genom länk. Alt. bara skicka bilden genom mail.  </p>
-
-</div>
-
-<div class="wrapper">
-
-<h2>Använd CSS-kod, stylesheet.</h2>
-<img src="http://i.imgur.com/Q714oAD.png?1"></a>
-
-  CSS står för Cascading Style Sheets, och används för att styra utseendet och formateringen i ett HTML-dokument.
-  Uppgiften var en av de första inledande uppgifterna i utbildningen FrontEnd och syftar till att kunna använda css-kod.</p>
-  <p>Uppgiften gällde att designa och koda ett recept online. Jag laborerade en del med skisser innan om vad jag får för 
-  associationer till kök och baka. Det är fördomsfullt, jag vet, men kunde inte låta bli att använda rosa.  </p>
-  
-			
-</div> 
-
-<div class="wrapper"> 
-
-<h2>Design för Flygblad online</h2><img src="http://i.imgur.com/g13WXvh.png"/>
-
-<p>Layout, bild, typografi, färg, hierarki och kongenialitet.</p>
-<p>Språket är den andra dörren som användaren ska passera enligt Sundström (2005). Om inte språket tilltalar användaren
- så finns det risk för att användaren klickar sig ifrån sidan. Detta är något som också är första intrycket - den måste
-  tala samma språk som resten av design och information, ingiva samma känsla. Därför lekte jag mig fram med typsnitt och
-   fastnade för fonten AR CHRISTY Regular som synes på bild 1. Den är lekfull, använder en form som inte är lik något annat
-    typsnitt som vanligen användes i text utan passar som rubrik för ändamålet. Däremot har jag använt mig av ett neutralt
-     typsnitt som Times New Roman för texter som ska informera läsaren. </p><p>Ingressen valde jag att göra fetstil eftersom jag
-      ville poängtera vad sidan handlar om innan läsaren väljer att läsa mer ingående. Likaså har jag valt att inte laborera
-       med typsnitt i den runda cirkeln, för mycket olika typsnitt skapar inte bättre intryck utan kan skapa förvirring för
-        användare – var ska jag läsa först? Därför har jag valt att formen ska tala för – nästan som ett ”extra pris stämpel”
-         - att det är något speciellt att läsa där. Enligt likhetens lag i gestaltlagarna håller sig cirkeln utanför ramen (Bergström, 2012). 
-</p>
-
-
-</div>
-
-<div class="wrapper">
 <h2>Bokomslag</h2>
-<img src="http://i.imgur.com/5SxWp2l.jpg"/>
 
-
-<p>Att arbeta med Indesign är ett bra sätt att strukturera upp text och bild. Att koda det till html/css är en helt annan sak. För uppgiften på MDH var
-det viktigt att kunna båda delarna och ingick i uppgiften. Efter att ha läst boken "Dr. Jekyll and Mr Hide", en klassiker, ville jag inte 
-designa något som liknar tidigare verk. Därför skissade jag figuren först förhand och har sedan lekt mig fram i Photoshop. </p>
-<p>Jag har valt att ha sent 1800-tal i åtanke. Boken Dr. Jekyll och Mr .Hyde. skrevs 1880 och jag ville få fram känslan av denna tid.
- Denna tid användes fonten Badoni, Caslon och Didot förekom under denna tid (Meldert, 2015. Föreläsning). Detta medför också en god
-  läsbarhet och läslighet. I rubriker har jag testat mig fram med verktyget som heter Lagerstil och olika val som;
-   innerskugga, ytterskugga, innerglöd, avfasning och relif. </p>
-  
-</div>
-
-<div class="wrapper">
-
-<h2>Layout och logotyp</h2>
-<img src="http://i.imgur.com/aEB0oSM.jpg"/><p>Det här var ett grupparbete där vi har tagit fram en konceptuell idé av ett fiktivt företag kallad ”Green recipes” som riktar sig till alla som älskar grönsaker.
- Webb-platsen ska innehålla sökbara recept som specialiserats utifrån kategorin Vegetarian/Vegan. En analys, idéskiss på tjänst, logotyp
-  och landningssida presenteras för denna uppgift.</p></br> 
-  
-<img src="http://i.imgur.com/rLDr9lI.jpg?1"/><p>Loggan ska hänvisa till vad sidan är – recept gjorda av grönsaker.  
-Lilla bilden visar mitt bidrag till logga. Vid tillfället fanns inget annat layout-program än programmet Paint
-   och Photoshop-online, därav begränsad till möjligheter. En logga måste vara unik och lätt att känna igen,
-   vilket mitt arbete visar. </p>
-
-</div>
-
-<div class="wrapper">
-<h2>Webbapplikation</h2>
-<link href="http://robhogfeldt-fron15.github.io/GruppC_3/"><img src="http://i.imgur.com/rr3j4Oq.jpg"/></a>
-
-<p>Grupparbete där vi designade en app som ska liknas vid en humör-barometer. Detta är ett komplement till studenter som har föreläsning,
- oavsett distans eller campus. Appen kan användas för att studenter ska kunna trycka på symboler istället för att räcka upp handen. </p>
-
- <p>Vid FrontEnd-utbildningen Javascript, distans, upptäckte vi i gruppen att det är oftast samma studenter som kommenterar under distans-föreläsningarna via Adobe Connect, medan andra aldrig kommenterade i kommentarsfältet. Detta
-  kan bero på osäkerhet eller blyghet. Vår app ska kunna användas utan att studenter känner sig utpekade. </p>
-  
-  <p>Genom att trycka på en knapp ser föreläsaren att en/flera studenter
-  vill uttrycka något. Symbolerna i appen, kan idag ge uttryck för glad/missnöjd smiley, återupprepa-knapp och tummenupp-knapp. Detta kan användas då, framförallt
-  läraren frågan studenterna om de hänger med i lektionen. </p>
-  
-  <p>Återupprepnings-knappen kan användas då studenter inte förstod och ber läraren att ta om det han nyss sade. Symbolerna
-   kan alla medverkande se i några sekunder efter att nåon tryckt på en knapp, men ingen kan se vem som har tryckt på den. Detta för att studenterna ska kunna utrycka sig,
-    men ändå vara anonyma. </p>
-    
-    <p>Appen tillhandahåller också en antecknings-funktion som gör att studenten kan gå tillbaka till sina sparade anteckningar för varje deltagande föreläsning.</p>
-  
-
-
-</div>
-
-<div class="wrapper">
-	<h2>Skapa en Todo-list</h2>
-<a href="todolist.html"><img src="http://i.imgur.com/iT1oU3k.jpg?1"/></a>
-	<p>Det här är en enkel todo-list. Jag har tyvärr inte haft tid att utveckla
-	den så mycket som jag önskar, men får duga för tillfället. Funktioner som ska
-	tilläggas är en edit-button bland annat.</p>
-</div>
-
-<div class="wrapper">
-	<h2>A cool thing - the power of AngularJS</h2>
-	
-	
-<p>Change the value of the input field:</p>
-
-<div ng-app="" ng-init="myCol='lightblue'">
-
-<input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
-
-</div>
-
-<p>AngularJS resolves the expression and returns the result.</p>
-
-<p>The background color of the input box will be whatever you write in the input field.</p>
-
-	
-	
-</div>
-	
-	
+<p> Boken Dr. Jekyll och Mr. Hyde skrevs 1880 och jag ville få fram känslan av denna tidsepok då typsnitt såsom Badoni, Caslon och Didot användes, något att ta hänsyn till. Detta medför också en god
+  läsbarhet och läslighet. Från egen skiss till Photoshop och InDesign. </p>
+  <img src="http://i.imgur.com/COlTXkb.jpg?1" class="img-responsive" alt="Responsive image"/>
 </div>
 </div>
+</div>
+<div class="container" style="margin-top:50px">
+<div class="row">
+
+  <div class="col-md-4">
+  <h2>Wireframe</h2>
+  <p>Att skapa och använda Wireframe (Balsamiq) är både roligt och viktigt. Ett kraftigt verktyg inom UX/UI-utveckling. Kan liknas
+   vid ett skelett av en webbsida, en ritning över innehåll. Verktyget kan också användas i ett tidigt skede i användbarhetstest för
+   tidig respons i designläget.
+  </p> <br><img src="http://i.imgur.com/flriYVw.jpg?3" class="img-responsive" alt="Responsive image"/>
+  </div>
 
 
-<p class="flip"><a href="#Utbildning"> Utbildning</a> <a name="Utbildning"></a></p>
-<div class="panel">
- <div class="wrapper">
-                <h2>Javascriptdevelopment, FrontEnd, from august 2015 - december 2016 </h2>   <a href="http://www.lernia.se/utbildning/Distans/Data-och-IT/JavaScriptutvecklare---Frontend-26659/#"><img src="http://i.imgur.com/0z9IRtO.jpg"/></a> 
-       <p>This study is 1.5 years and prepares students for a career
-        in the JavaScript programming language, and the front-end design. 
-        In modern computer technology is front-end often associated  with
-        Web-based software modules based on HTML, CSS and JavaScript, which
-        developers of these parts are called web developers or web designers.
-        A front-end developer architects and develops websites and applications
-        using web technologies (i.e. HTML, CSS, and JavaScript) which run natively
-        in a web browser or act as compilation input for non-web browser environments.
-        </p> 
-        
-        
+ <div class="col-md-4">
+  <h2>Personas</h2>
 
-      </div>
-        
-    <div class="wrapper">
-                           <h2>Cognitive Science, 180 hp, University of Skövde. From august 2012- june 2015</h2><a href="http://www.his.se/om-oss/Utbildningar-och-amnen/Data-och-IT/Kognitionsvetenskap/"><img src="http://i.imgur.com/YC7g83O.png"/></a>
-           <p>Cognitive science is an interdisciplinary field in which human thinking
-           (thought processes / information processing) is studied. Computer science,
-           cognitive psychology, cognitive neuroscience, linguistics and philosophy included as central subtopics.</p>
-           
-           <p>With expertis in Cognitive Science you are enable to designing interfaces that are logical and easy to use
-           but also explain why and how it affects users.</p>
-           
-           <p>The field of cognitive neuroscience is relatively new and integrates psychology, biology and philosophy
-           by describing various central themes such as perception, language, memory, and consciousness. Research in
-           cognitive neuroscience aims to increase knowledge and understanding on how different human abilities or
-           characteristics are reflected in the form of activity in the brain.</p>
-           
-        
-         
-
-
-           </p></div>
-           <div class="wrapper">
-<h2>Informationsdesign, 30 hp, Mälardalens University, From august 2010 - december 2010</h2> <a href="textdesign"><img src="http://i.imgur.com/CjjE2c6.jpg"/></a>
-           <p>
-Text Design is an education in information design. The program includes both practical training
-and theoretical studies. It leads to a Bachelor's degree and will give you a good knowledge before
-a professional career in the ICT field. During training, you work with different types of texts.
-You write the narrative, argumentative, informative, descriptive and instructional texts. You will
-learn to analyze and adapt texts to different contexts, audiences and media, such as Web.</p>
-     
-           
-
+<p>Att studera sina användare innan design är som att ta fram alla ingredienser innan man ska baka. För att kunna designa en produkt eller ett system måste
+designaren veta användaren är, förstå behov och kontext användaren befinner sig i. Tidig respons motverkar problem i framtiden och spar både reurser och kapital. 
 </p>
+<br>
+<img src="http://i.imgur.com/4eFOVom.jpg?1" class="img-responsive" alt="Responsive image"style="margin-left:auto; margin-right:auto"/>
+</div>
+
+<div class="col-md-4">
+<h2>Användbarhetstest</h2>
+<p>Att boka en resa kan vara krångligare än man tror, men det ska inte behöva vara så. Genom att använda scenarior användbarhetstestades
+Vings kundresor i ett användbarhetslabb. Värdefull information insamlades om kundresan och användarens förväntningar med bl.a. "think out loud"-teknik. </p>
+<img src="http://i.imgur.com/UvHLgMR.jpg?1" class="img-responsive" alt="Responsive image"style="margin-left:auto; margin-right:auto; margin-top:25px"/>
+
+</div>
+
+</div></div>
+
+
+<div class="content" style="background-color:#99FF66; padding-bottom:30px; padding-top:30px; margin-top:50px">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+     <img src="http://i.imgur.com/32zvb2u.png?1" class="img-responsive" alt="Responsive image"style="margin-top:25px"/>
+     </div>
+     
+
+<div class="col-md-4">
+<h2>Layout och logotyp</h2>
+
+<p>En analys av ett fiktivt företag, idéskiss på tjänst, logotyp
+  och landningssida. Loggan ska hänvisa till vad sidan är – recept gjorda av grönsaker.  
+ Vid tillfället fanns inget annat layout-program än programmet Paint
+   och Photoshop-online, därav begränsad till möjligheter. </p> 
+     </div>  
+
+     
+    <div class="col-md-4">
+ <img src="http://i.imgur.com/TltKMiI.jpg?1" class="img-responsive" alt="Responsive image" style="margin-top:25px"/>
+ </div>
+ </div>
+ </div>
+</div>
+<br>
+<div class="content" style="background-color:#; padding-bottom:30px; padding-top:30px; margin-top:25px">
+<div class="container">
+<div class="row">
+ <div class="col-md-4">
+
+<img src="http://i.imgur.com/3tmf7jn.jpg?1" class="img-responsive" alt="Responsive image"/></div>
+<div class="col-md-4">
+  <h2>Webbaplikation</h2><p>Ett grupparbete där en app designades, kan liknas vid en humör-barometer. Detta är ett komplement till studenter som har föreläsning,
+ oavsett distans eller campus. Appen kan användas för att studenter ska kunna trycka på symboler istället för att räcka upp handen. Användbarhetsproblem - vid studier i </p>
+</div>
+<div class="col-md-4" style="margin-top:10px">
+<br>
+ <p> FrontEnd-utbildningen Javascript, distans, upptäcktes det att det är oftast samma studenter som kommenterar under distans-föreläsningarna
+  via Adobe Connect, medan andra aldrig kommenterade i kommentarsfältet. Detta
+  kan bero på osäkerhet eller blyghet. Appen ska kunna användas utan att studenter känner sig utpekade. </p>
  
+ 
+ </div></div></div>
+ <br>
+<div class="content" style="background-color:#CCCCCC">
+<div class="container">
+<div class="row">
+ <div class="col-md-6">
+  
+  <h2>Ny Design, prototyp</h2>
+	<p>Tentamen i kursen Interaktionsdesign och användbarhet bestod i att kritiskt granska en landingpage och dokumentera detta.
+Förslag på ny design, layout och grafisk profil skapades för att matcha gällande designprinciper.
+
+ 
+ <a href="http://bokfynd.se"><img src="http://i.imgur.com/Im6mJZm.jpg?3" class="img-responsive"/></a>
+ <h3>Före:</h3>
+</div>
+ <div class="col-md-6" style="margin-top:80px">
+
+<a href="http://seitzberglinda.github.io/TentamenFRO15/"><img src="http://i.imgur.com/O0qNr0N.jpg?1" class="img-responsive"/></a>
+<h3>Efter</h3>
+</div></div></div></div>
+
+<div class="container" style="margin-left:auto; margin-right:auto;">
+<div class="row"> 
+
+ <div class="col-md-6">
+<h2>Projekt 5T</h2>
+<p>Det här projektet är mitt examensarbete som kognitionsvetare inom MDI, interaktionsdesign. Min uppgift var att lösa problemet för lantburkarna i EU-projektet
+5T att kunna lära sig av varandra över internet. Jag intervjuade och skapade och utförde marknadsundersökning av lantbrukarna för att kunna skapa en lärplattform.
+<a href="http://his.diva-portal.org/smash/record.jsf?pid=diva2%3A844080&dswid=-3645"> Läs mer om mitt arbete.</a>  </p>
+Jag skapade en HiFi-prototyp i form av HTML/CSS-länk, klicka på bilden. 
+
+  <a href="http://wwwlab.iit.his.se/a10linse/"><img class="img-responsive" src="http://i.imgur.com/8p4aAmW.jpg?1"/></a>
+
+</div>
+</div>
+</div>
+<div class="container" style="margin-left:auto; margin-right:auto;">
+<div class="row"> 
+<div class="col-md-4">          
+ <img src="http://i.imgur.com/JwVfQa1.jpg" style="border:none"/></div>
+<br>
+
+<div class=".col-xs-12 .col-sm-6 .col-md-8" style="width:650px; float:right;">
+
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1036794.191030082!2d15.544213711590912!3d59.49995340764803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465dd800bb6d6849%3A0x400fef341e48160!2sSurahammar!5e0!3m2!1ssv!2sse!4v1459160487763" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> 
+  
+          </div>
+</div>
+<div class="container">
+<div class=".col-xs-6 .col-md-4" style="width:500px">
+	    <div class="container" >
+  <div id="fooContainer">
+  <div class="foo"> 
+<p style="text-align:center; font-family:'Indie Flower', cursive; font-size:45px">
+Ring mig 073-633 18 04</p>
+<p style="text-align:center; font-family:'Indie Flower', cursive; font-size:45px">
+eller maila lindasahlgren@hotmail.com</p>
+  </div>
+  <div>
+</div>
+</div>
+ <!-- JS FILES -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/jqBootstrapValidation.js"></script>
+ <script src="./js/contact_me.js"></script>
+ <script>
+ if(empty($_POST['name'])  		||
+   empty($_POST['email']) 		||
+   empty($_POST['message'])	||
+   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+   {
+	echo "No arguments Provided!";
+	return false;
+   }
+	
+$name = $_POST['name'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+$to = 'lindasahlgren@hotmail.com'; 
+$email_subject = "Contact form submitted by:  $name";
+$email_body = "You have received a new message. \n\n".
+				  " Here are the details:\n \nName: $name \n ".
+				  "Email: $email_address\n Message \n $message";
+$headers = "From: ?"?;
+$headers .= "Reply-To: $email_address";	
+mail($to,$email_subject,$email_body,$headers);
+return true;			
+?>
+ 
+ </script>
+<script>
+$('#knack').hover(function(){
+    if(!$(this).hasClass('animated')){
+        $(this).addClass('animated');
+        $(this).stop().effect('shake', {distance:3}, 200);
+    }
+}, function(){
+    $(this).removeClass('animated');
+});
+</script>
+
+<script>
+// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
+
+// Customizing a reveal set
+sr.reveal('.foo', { duration: 2000 });</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link href="hinge.css" rel="stylesheet" type="text/css"/>
+<link href="animate.css" rel="stylesheet" type="text/css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.2/scrollreveal.min.js"></script>
+<script src="jquery.min.js"></script>
+
+<script src="wowegen.js" type="application/javascript"/>
+ <script>
+              new WOW().init();
+              </script>
+
+<script>var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();</script>
+
+<script>
+$(document).ready(function(){
+  $('.skill_one').animate({width:'85%'}, 3000);
+  $('.skill_two').animate({width:'95%'}, 3000);
+  $('.skill_three').animate({width:'95%'}, 3000);
+  $('.skill_four').animate({width:'30%'}, 3000);
+  $('.skill_five').animate({width:'80%'}, 3000);
+});
+</script>
+<style>
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(2); /* Safari and Chrome */
+    -moz-transform:scale(2); /* Firefox */
+    -ms-transform:scale(2); /* IE 9 */
+    -o-transform:translatZ(0) scale(2); /* Opera */
+    transform:translatZ(0) scale(2);
+}
+  
+  
+.grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%); 
+}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <h1 style="color:black; font-family:Cookie; font-size:45px"> Linda Seitzberg</h1> <i class="fa fa-phone" style="margin-right:100px; color:white"> +46 (0)73 633 18 04</i></div></nav>
+    
+                
+  <div class="jumbotron" style="background-image:url('color-1241879_1920.jpg'); background-repeat:no-repeat; height:320px; background-color: #BAD1BA;
+border-radius: 20px;box-shadow: 5px 5px 10px rgba(0,0,0, 0.5)">
+</div>
+  <div class="container" >
+  <div id="fooContainer">
+  <div class="foo"> 
+<p style="text-align:center; font-family:Cookie; font-size:45px" class="wow wobble">
+Hej</p>
+  </div>
+  </div>
+  <div>
+  <div class="container">  
+  <div class="row">
+  <div class="col-md-9 col-md-push-3"><p style="font-family:'Indie Flower', cursive; font-size:25px">Jag har alltid fascinerats av människan, hur vi tänker och fungerar,
+ och jag har alltid varit nyfiken och intresserad av webben! Så när jag hittade utbildningen Kognitionsvetenskap vid Högskolan i Skövde så var det självklart att jag skulle bli kognitionsvetare.
+ Kunskapen om MDI gör mig bara ännu mer nyfiken och jag läser allt jag kommer över. </p>
+ <p style="font-family:'Indie Flower', cursive; font-size:25px">Jag blev klar sommaren 2015 och studerar idag FrontEnd,
+  Javascript på Lernia, distans vilket ger mig en fördjupning i MDI och en djupare förståelse för interaktionsdesign. Det är en sak att designa
+   och en helt annan att koda. Min ambition är att skapa lösningar där andra ser problem. Att se helheten i projekt är viktiga, från kundens önskan
+    till levererad slutprodukt där målet är att slutanvändaren får en optimal kundresa.</p><br></div>
+  <div class="col-md-3 col-md-pull-9"><img src="http://i.imgur.com/gouKUKk.jpg" class="img-responsive"/></div>
+  <br>
+ <div class="col-md-6 col-md-offset-3 img-hover wow tada data-wow-duration=5s" style="margin-top:150px;"data-wow-delay="5s"><img src="http://i.imgur.com/73X7jT8.jpg" style="margin-left:auto;margin-right:auto" class="img-responsive" alt="Responsive image"/></div>
+ 
+ </div></div>
+ 
+ <div class="container" style="margin-top:100px">
+ <div class="row">
+  <div class="col-md-8"> <p style="font-family:'Indie Flower', cursive; font-size:25px; margin-top:100px"> 
+Med arbetslivserfarenhet från både försäljning, marknadsföring, vård och omsorg har jag alltid satt kundservice i centrum
+ vilket gör att jag är mycket serviceinriktad. Inom interaktionsdesign är det viktigt att ha ett nära samarbete med användare och slutkund i projekt och min erfarenhet har
+ gjort mig trygg i mig själv och min kompetens tillsammans med ett serviceinriktat sinne.</p><br>
+ <br></div>
+ 
+  <div class="col-md-4">
+  <iframe id="vp1KNqxQ" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1441964844&f=KNqxQRxswVMI4mmIsHOnWQ&d=0&m=p&r=360&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" padding="20px" align="left" margin="10px" allowfullscreen></iframe>
+</div>
+</div></div>
+
+
+
+
+<div class="container" style="margin-top:150px">
+<h1 style="text-align:center; font-family:'Didact Gothic', sans-serif;" class="wow bounceInLeft">Ett urval av mina projekt</h1>
+<div class="row" style="margin-top:50px">
+  <div class="col-md-4">	
+<h2>Designa & koda 2d-spel</h2>
+<p>Mitt spel går ut på att en liten gubbe ska samla så många morötter han kan. Spelet vänder sig till barn mellan 5-8 år. Tanken var från början att 
+det skulle vara en vegetarian som samlade frukt, bär och grönsaker medan köttbitar får spelarens hälsa-barometer att sjunka.</p> <br>
+ <img src="http://i.imgur.com/fYYJpeI.jpg?1" class="img-responsive" alt="Responsive image" style="background-color: #BAD1BA;
+border-radius: 20px;
+box-shadow: 5px 5px 10px rgba(0,0,0, 0.5)"/>
 </div>
 
+  <div class="col-md-4">
+<h2>Interactive Infographic</h2><p> 
+Väl utformade infographics används för att förenkla ett 
+komplicerat ämne eller göra något som annars är tråkigt 
+till något fängslande. Att använda sig av interaktivt 
+innehåll i sina infographics har blivit en av de mest 
+effektiva strategierna inom digital marknadsföring. </p>
+	<img src="http://i.imgur.com/oPdJ6VF.jpg?1" class="img-responsive" alt="Responsive image"/>
+</div>
+
+<div class="col-md-4">
+
+<h2>Bokomslag</h2>
+
+<p> Boken Dr. Jekyll och Mr. Hyde skrevs 1880 och jag ville få fram känslan av denna tidsepok då typsnitt såsom Badoni, Caslon och Didot användes, något att ta hänsyn till. Detta medför också en god
+  läsbarhet och läslighet. Från egen skiss till Photoshop och InDesign. </p>
+  <img src="http://i.imgur.com/COlTXkb.jpg?1" class="img-responsive" alt="Responsive image"/>
+</div>
+</div>
+</div>
+<div class="container" style="margin-top:50px">
+<div class="row">
+
+  <div class="col-md-4">
+  <h2>Wireframe</h2>
+  <p>Att skapa och använda Wireframe (Balsamiq) är både roligt och viktigt. Ett kraftigt verktyg inom UX/UI-utveckling. Kan liknas
+   vid ett skelett av en webbsida, en ritning över innehåll. Verktyget kan också användas i ett tidigt skede i användbarhetstest för
+   tidig respons i designläget.
+  </p> <br><img src="http://i.imgur.com/flriYVw.jpg?3" class="img-responsive" alt="Responsive image"/>
+  </div>
+
+
+ <div class="col-md-4">
+  <h2>Personas</h2>
+
+<p>Att studera sina användare innan design är som att ta fram alla ingredienser innan man ska baka. För att kunna designa en produkt eller ett system måste
+designaren veta användaren är, förstå behov och kontext användaren befinner sig i. Tidig respons motverkar problem i framtiden och spar både reurser och kapital. 
+</p>
+<br>
+<img src="http://i.imgur.com/4eFOVom.jpg?1" class="img-responsive" alt="Responsive image"style="margin-left:auto; margin-right:auto"/>
+</div>
+
+<div class="col-md-4">
+<h2>Användbarhetstest</h2>
+<p>Att boka en resa kan vara krångligare än man tror, men det ska inte behöva vara så. Genom att använda scenarior användbarhetstestades
+Vings kundresor i ett användbarhetslabb. Värdefull information insamlades om kundresan och användarens förväntningar med bl.a. "think out loud"-teknik. </p>
+<img src="http://i.imgur.com/UvHLgMR.jpg?1" class="img-responsive" alt="Responsive image"style="margin-left:auto; margin-right:auto; margin-top:25px"/>
 
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
+</div></div>
+
+
+<div class="content" style="background-color:#99FF66; padding-bottom:30px; padding-top:30px; margin-top:50px">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+     <img src="http://i.imgur.com/32zvb2u.png?1" class="img-responsive" alt="Responsive image"style="margin-top:25px"/>
+     </div>
+     
+
+<div class="col-md-4">
+<h2>Layout och logotyp</h2>
+
+<p>En analys av ett fiktivt företag, idéskiss på tjänst, logotyp
+  och landningssida. Loggan ska hänvisa till vad sidan är – recept gjorda av grönsaker.  
+ Vid tillfället fanns inget annat layout-program än programmet Paint
+   och Photoshop-online, därav begränsad till möjligheter. </p> 
+     </div>  
+
+     
+    <div class="col-md-4">
+ <img src="http://i.imgur.com/TltKMiI.jpg?1" class="img-responsive" alt="Responsive image" style="margin-top:25px"/>
+ </div>
+ </div>
+ </div>
+</div>
+<br>
+<div class="content" style="background-color:#; padding-bottom:30px; padding-top:30px; margin-top:25px">
+<div class="container">
+<div class="row">
+ <div class="col-md-4">
+
+<img src="http://i.imgur.com/3tmf7jn.jpg?1" class="img-responsive" alt="Responsive image"/></div>
+<div class="col-md-4">
+  <h2>Webbaplikation</h2><p>Ett grupparbete där en app designades, kan liknas vid en humör-barometer. Detta är ett komplement till studenter som har föreläsning,
+ oavsett distans eller campus. Appen kan användas för att studenter ska kunna trycka på symboler istället för att räcka upp handen. Användbarhetsproblem - vid studier i </p>
+</div>
+<div class="col-md-4" style="margin-top:10px">
+<br>
+ <p> FrontEnd-utbildningen Javascript, distans, upptäcktes det att det är oftast samma studenter som kommenterar under distans-föreläsningarna
+  via Adobe Connect, medan andra aldrig kommenterade i kommentarsfältet. Detta
+  kan bero på osäkerhet eller blyghet. Appen ska kunna användas utan att studenter känner sig utpekade. </p>
+ 
+ 
+ </div></div></div>
+ <br>
+<div class="content" style="background-color:#CCCCCC">
+<div class="container">
+<div class="row">
+ <div class="col-md-6">
+  
+  <h2>Ny Design, prototyp</h2>
+	<p>Tentamen i kursen Interaktionsdesign och användbarhet bestod i att kritiskt granska en landingpage och dokumentera detta.
+Förslag på ny design, layout och grafisk profil skapades för att matcha gällande designprinciper.
+
+ 
+ <a href="http://bokfynd.se"><img src="http://i.imgur.com/Im6mJZm.jpg?3" class="img-responsive"/></a>
+ <h3>Före:</h3>
+</div>
+ <div class="col-md-6" style="margin-top:80px">
+
+<a href="http://seitzberglinda.github.io/TentamenFRO15/"><img src="http://i.imgur.com/O0qNr0N.jpg?1" class="img-responsive"/></a>
+<h3>Efter</h3>
+</div></div></div></div>
+
+<div class="container" style="margin-left:auto; margin-right:auto;">
+<div class="row"> 
+
+ <div class="col-md-6">
+<h2>Projekt 5T</h2>
+<p>Det här projektet är mitt examensarbete som kognitionsvetare inom MDI, interaktionsdesign. Min uppgift var att lösa problemet för lantburkarna i EU-projektet
+5T att kunna lära sig av varandra över internet. Jag intervjuade och skapade och utförde marknadsundersökning av lantbrukarna för att kunna skapa en lärplattform.
+<a href="http://his.diva-portal.org/smash/record.jsf?pid=diva2%3A844080&dswid=-3645"> Läs mer om mitt arbete.</a>  </p>
+Jag skapade en HiFi-prototyp i form av HTML/CSS-länk, klicka på bilden. 
+
+  <a href="http://wwwlab.iit.his.se/a10linse/"><img class="img-responsive" src="http://i.imgur.com/8p4aAmW.jpg?1"/></a>
+
+</div>
+</div>
+</div>
+<div class="container" style="margin-left:auto; margin-right:auto;">
+<div class="row"> 
+<div class="col-md-4">          
+ <img src="http://i.imgur.com/JwVfQa1.jpg" style="border:none"/></div>
+<br>
+
+<div class=".col-xs-12 .col-sm-6 .col-md-8" style="width:650px; float:right;">
+
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1036794.191030082!2d15.544213711590912!3d59.49995340764803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465dd800bb6d6849%3A0x400fef341e48160!2sSurahammar!5e0!3m2!1ssv!2sse!4v1459160487763" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> 
+  
+          </div>
+</div>
+<div class="container">
+<div class=".col-xs-6 .col-md-4" style="width:500px">
+	    <div class="container" >
+  <div id="fooContainer">
+  <div class="foo"> 
+<p style="text-align:center; font-family:'Indie Flower', cursive; font-size:45px">
+Ring mig 073-633 18 04</p>
+<p style="text-align:center; font-family:'Indie Flower', cursive; font-size:45px">
+eller maila lindasahlgren@hotmail.com</p>
+  </div>
+  <div>
+</div>
+</div>
+ <!-- JS FILES -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/jqBootstrapValidation.js"></script>
+ <script src="./js/contact_me.js"></script>
+ <script>
+ if(empty($_POST['name'])  		||
+   empty($_POST['email']) 		||
+   empty($_POST['message'])	||
+   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+   {
+	echo "No arguments Provided!";
+	return false;
+   }
+	
+$name = $_POST['name'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+$to = 'lindasahlgren@hotmail.com'; 
+$email_subject = "Contact form submitted by:  $name";
+$email_body = "You have received a new message. \n\n".
+				  " Here are the details:\n \nName: $name \n ".
+				  "Email: $email_address\n Message \n $message";
+$headers = "From: ?"?;
+$headers .= "Reply-To: $email_address";	
+mail($to,$email_subject,$email_body,$headers);
+return true;			
+?>
+ 
+ </script>
+<script>
+$('#knack').hover(function(){
+    if(!$(this).hasClass('animated')){
+        $(this).addClass('animated');
+        $(this).stop().effect('shake', {distance:3}, 200);
+    }
+}, function(){
+    $(this).removeClass('animated');
+});
+</script>
+
+<script>
+// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
+
+// Customizing a reveal set
+sr.reveal('.foo', { duration: 2000 });</script>
 </body>
 </html>
