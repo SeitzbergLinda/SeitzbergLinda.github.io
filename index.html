@@ -58,7 +58,24 @@ $(document).ready(function(){
   $('.skill_five').animate({width:'80%'}, 3000);
 });
 </script>
+</script>
+
 <style>
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
 .img-hover img {
     -webkit-transition: all .3s ease; /* Safari and Chrome */
   	-moz-transition: all .3s ease; /* Firefox */
