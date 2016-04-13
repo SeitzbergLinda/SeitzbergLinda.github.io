@@ -1,0 +1,401 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 10px 25px;
+    width: 100%;
+    background: silver;
+   
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="logo-small.png"/></a>
+<ul class="nav nav-tabs">
+  <li role="presentation" ><a href="#">Start</a></li>
+  <li role="presentation"><a href="#">Schemaläggning</a></li>
+  <li role="presentation"><a href="#">Tidstyper</a></li>
+  <li role="presentation"><a href="#">Resurser</a></li>
+  <li role="presentation"><a href="#">Patienter</a></li>
+  <li role="presentation" class="active"><a href="#">Boka besök</a></li>
+  <li role="presentation"><button data-toggle="collapse" data-target="#demo2" class="btn dropdown-toggle btn-primary btn-sm">
+<a href="#"><img src="call-button-clipart-2.jpg"/>Ringa patient  </a></button></li>
+  
+
+ <button type="button" class="btn dropdown-toggle btn-info btn-large" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float:right; margin-top:5px">
+  <i class="fa fa-user fa-1x"></i> Linda Seitzberg<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Inställningar</a></li>
+    <li><a href="#">Logga ut</a></li>
+  </ul>
+
+
+</ul>
+  </div>
+</nav>
+<div class="content" style="margin-top:55px">
+<div class="row">
+<div class="dropdown col-md-9" style="margin-left:50px;height:40px">
+<button data-toggle="collapse" data-target="#demo1" class="btn dropdown-toggle btn-primary btn-sm">Journal</button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Labb</a></li>
+    <li><a href="#">Patientkontakt</a></li>
+    <li><a href="#">Ärenden</a></li>
+  </ul>
+
+ <button data-toggle="collapse" data-target="#demo" class="btn dropdown-toggle btn-primary btn-sm">Kalender</button>
+</div>
+   </div>
+
+<div class="col-md-2" style="margin-left:40px">
+
+<div class="form-group">
+          <input type="text" class="form-control" placeholder="Sök patient...">
+        </div>
+<div class="form-group">
+
+Förnamn:<br>
+<input type="text" name="fnamn" id="fnamn" style="border-radius:5px;" /> <br>
+
+Efternamn:<br>
+<input type="text" name="enamn" id="enamn" style="border-radius:5px;" /> <br>
+Personnummer:<br>
+<input type="text" name="fnamn" id="fnamn" style="border-radius:5px;" /> <br>
+
+Telefon:<br>
+<input type="text" name="enamn" id="enamn"  style="border-radius:5px;"/> <br>
+E-postadress:<br>
+<input type="text" name="epost" id="epost" style="border-radius:5px;" /> <br>
+
+Meddelande:
+<br>
+<br>
+<br>
+<br>
+<textarea name="meddelande" id="meddelande" cols="50" rows="5"style="border-radius:5px;">Kommentar...</textarea><label for="exampleInputFile">file input</label>
+  <input type="file" id="exampleInputFile">
+  <div class="checkbox"> <br>
+      </div></div>
+     
+     
+</div>
+
+
+<div id="demo1" class="collapse col-md-4">
+<div class="dropdown" style="margin-left:50px;height:40px">
+ <button type="button" class="btn dropdown-toggle btn-success btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Patientkontakt<span class="caret"></span>
+  </button>
+  
+  <button type="button" class="btn dropdown-toggle btn-success btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Ärenden <span class="caret"></span>
+  </button>
+</div>
+ <button type="button" class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Status/Anamnes <span class="caret"></span>
+  </button>
+
+ <button type="button" class="btn dropdown-toggle btn-default tbtn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Bedömning <span class="caret"></span>
+  </button>
+
+ <button type="button" class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Åtgärd <span class="caret"></span>
+  </button>
+
+ <button type="button" class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    +Nytt <span class="caret"></span>
+  </button>
+
+<img src="journalvy1.jpg"/>
+
+</div>
+
+<div id="demo" class="collapse col-md-3">
+ <button type="button" class="btn dropdown-toggle btn-success btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Resurser <span class="caret"></span>
+  </button>
+  
+ <div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-8">
+<table class="table table-reflow">
+ <table class="table">
+  <thead>
+    <tr>
+      <th>Klockslag</th>
+      <th>Måndag</th>
+      <th>Tisdag</th>
+      <th>Onsdag</th>
+      <th>Torsdag</th>
+      <th>Fredag</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">07.00</th>
+       <td>Bokad</td>
+      <td></td>
+      <td>Bokad</td>
+	<td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">08.00</th>
+   		<td></td>
+      <td>Bokad</td>
+      <td>Bokad</td>
+	<td></td>
+      <td>Bokad</td>
+      <td></td>
+    </tr>
+    
+    <tr>
+      <th scope="row">09.00</th>
+      <td></td>
+      <td>Bokad</td>
+      <td>Bokad</td>
+      <td></td>
+      <td></td>
+
+    </tr>
+       <tr>
+      <th scope="row">10.00</th>
+    <td></td>
+      <td>Bokad</td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+
+   <tr>
+      <th scope="row">11.00</th>
+      <td>Bokad</td>
+      <td>Bokad</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+   <tr>
+      <th scope="row">12.00</th>
+    <td></td>
+    <td></td>
+      <td></td>
+      <td>Bokad</td>
+      <td></td>
+    </tr>
+
+   <tr>
+      <th scope="row">13.00</th>
+   		<td></td>
+   		<td></td>
+      <td></td>
+      <td></td>
+      <td>Bokad</td>
+    </tr>
+
+   <tr>
+      <th scope="row">14.00</th>
+      <td>Bokad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    
+   <tr>
+      <th scope="row">15.00</th>
+      <td>Bokad</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+   <tr>
+      <th scope="row">16.00</th>
+       <td>Bokad</td>
+      <td></td>
+      <td></td>
+      <td>Bokad</td>
+      <td></td>
+    </tr>
+
+   <tr>
+      <th scope="row">17.00</th>
+      <td>Bokad</td>
+      <td>Bokad</td>
+      <td></td>
+      <td></td>
+      <td>Bokad</td>
+
+    </tr>
+   
+ 
+  </tbody>
+</table></table></div></div></div>
+
+  </div>
+<div class="col-md-3 col-md-offset-9" style="position:fixed">
+<div id="demo">
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/FyKJcnp/video-chat-with-african-american-doctor_njnz06ybl__PS.mp4
+" style="border:none"></iframe>
+<div class="col-md-4">
+<video id="gum local" autoplay="" style="height:300px;width:390px;" class="demo2"></video>
+<div id="errorMsg"></div>
+<div class="container" style="height:250px;width:300px;border:thin solid gray;">
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GP7zpyx/senior-woman-speaks-to-camera-for-video-chat-or-video-call_njioxvcq__PS.mp4" style="border:none"></iframe>
+</div>
+
+
+</div>
+</div>
+
+ <script src="src/js/lib/ga.js"></script>
+  <script src="../../../js/adapter.js"></script>
+  <script src="../../../js/common.js"></script>
+  <script src="js/main.js"></script>
+<script>
+'use strict';
+
+// Put variables in global scope to make them available to the browser console.
+var video = document.querySelector('video');
+var constraints = window.constraints = {
+  audio: false,
+  video: true
+};
+var errorElement = document.querySelector('#errorMsg');
+
+navigator.mediaDevices.getUserMedia(constraints)
+.then(function(stream) {
+  var videoTracks = stream.getVideoTracks();
+  console.log('Got stream with constraints:', constraints);
+  console.log('Using video device: ' + videoTracks[0].label);
+  stream.onended = function() {
+    console.log('Stream ended');
+  };
+  window.stream = stream; // make variable available to browser console
+  video.srcObject = stream;
+})
+.catch(function(error) {
+  if (error.name === 'ConstraintNotSatisfiedError') {
+    errorMsg('The resolution ' + constraints.video.width.exact + 'x' +
+        constraints.video.width.exact + ' px is not supported by your device.');
+  } else if (error.name === 'PermissionDeniedError') {
+    errorMsg('Permissions have not been granted to use your camera and ' +
+      'microphone, you need to allow the page access to your devices in ' +
+      'order for the demo to work.');
+  }
+  errorMsg('getUserMedia error: ' + error.name, error);
+});
+
+function errorMsg(msg, error) {
+  if (typeof error !== 'undefined') {
+    console.error(msg, error);
+  }
+  errorElement.innerHTML += '<p>' + msg + '</p>';
+}</script>
+
+
+</body>
+
+</html> 
