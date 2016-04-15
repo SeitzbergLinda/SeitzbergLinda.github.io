@@ -1,16 +1,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../Documents/My%20Web%20Sites/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css/>
-"
+<link rel="stylesheet" href="../../../Documents/My%20Web%20Sites/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../Documents/My%20Web%20Sites/font-awesome.min.css">
+
+  <link rel="stylesheet" href="../../../Documents/My%20Web%20Sites/bootstrap.min.css">
+<link rel="stylesheet" href="../../font-awesome.min.css">
+
+  <script src="../../../Documents/My%20Web%20Sites/jquery.min.js"></script>
+  <script src="../../../Documents/My%20Web%20Sites/bootstrap.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="../../../Documents/My%20Web%20Sites/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script><title>StartSchemaläggningTidstyperResu</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 <style>
+
+.video-mask{
+width: 350px;
+-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); 
+-webkit-transform: rotate(0.000001deg); 
+-webkit-border-radius: 10px; 
+-moz-border-radius: 10px;
+border-radius: 10px; 
+overflow: hidden; 
+}
+
 * {box-sizing:border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana,sans-serif;}
@@ -106,14 +123,15 @@ body {font-family: Verdana,sans-serif;}
   <li role="presentation"><a href="#">Resurser</a></li>
   <li role="presentation"><a href="#">Patienter</a></li>
   <li role="presentation" class="active"><a href="#">Boka besök</a></li>
-  <li role="presentation"><button data-toggle="collapse" data-target="#demo2" class="btn dropdown-toggle btn-primary btn-sm">
-<a href="#"><img src="call-button-clipart-2.jpg"/>Ringa patient  </a></button></li>
+  <li role="presentation"><button data-toggle="collapse" data-target="#demo2"  style="margin-left:25px;margin-right:25px;margin-top:5px" class="btn dropdown-toggle btn-primary btn-sm" 
+  id='playVid'><i class="fa fa-phone" aria-hidden="true" style="color:lime;font-size:15px"></i>
+  Ringa patient </button>
   
 
  <button type="button" class="btn dropdown-toggle btn-info btn-large" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float:right; margin-top:5px">
   <i class="fa fa-user fa-1x"></i> Linda Seitzberg<span class="caret"></span>
   </button>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-menu" style="float:right">
     <li><a href="#">Inställningar</a></li>
     <li><a href="#">Logga ut</a></li>
   </ul>
@@ -139,7 +157,7 @@ body {font-family: Verdana,sans-serif;}
 <div class="col-md-2" style="margin-left:40px">
 
 <div class="form-group">
-          <input type="text" class="form-control" placeholder="Sök patient...">
+          <input type="text" class="form-control" placeholder="Sök patient..."><i class="icon-zoom-in"></i>
         </div>
 <div class="form-group">
 
@@ -161,7 +179,7 @@ Meddelande:
 <br>
 <br>
 <br>
-<textarea name="meddelande" id="meddelande" cols="50" rows="5"style="border-radius:5px;">Kommentar...</textarea><label for="exampleInputFile">file input</label>
+<textarea name="meddelande" id="meddelande" cols="25" rows="5"style="border-radius:5px;">Kommentar...</textarea><label for="exampleInputFile">file input</label>
   <input type="file" id="exampleInputFile">
   <div class="checkbox"> <br>
       </div></div>
@@ -208,10 +226,9 @@ Meddelande:
  <div class="container">
 <div class="row">
 <div class="col-xs-12 col-sm-6 col-md-8">
-<table class="table table-reflow">
- <table class="table">
+ <table class="table table-striped">
   <thead>
-    <tr>
+    <tr class="active">
       <th>Klockslag</th>
       <th>Måndag</th>
       <th>Tisdag</th>
@@ -238,7 +255,7 @@ Meddelande:
       <td>Bokad</td>
 	<td></td>
       <td>Bokad</td>
-      <td></td>
+     
     </tr>
     
     <tr>
@@ -283,7 +300,7 @@ Meddelande:
    		<td></td>
    		<td></td>
       <td></td>
-      <td></td>
+      <td>Bokad</td>
       <td>Bokad</td>
     </tr>
 
@@ -292,11 +309,15 @@ Meddelande:
       <td>Bokad</td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
     </tr>
     
    <tr>
       <th scope="row">15.00</th>
       <td>Bokad</td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
@@ -319,32 +340,39 @@ Meddelande:
       <td>Bokad</td>
 
     </tr>
-   
- 
-  </tbody>
-</table></table></div></div></div>
+  </tbody></table></div></div></div>
 
   </div>
 <div class="col-md-3 col-md-offset-9" style="position:fixed">
-<div id="demo">
+<div id="demo2">
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/FyKJcnp/video-chat-with-african-american-doctor_njnz06ybl__PS.mp4
-" style="border:none"></iframe>
-<div class="col-md-4">
-<video id="gum local" autoplay="" style="height:300px;width:390px;" class="demo2"></video>
-<div id="errorMsg"></div>
-<div class="container" style="height:250px;width:300px;border:thin solid gray;">
-</div>
-</div>
-</div>
+<div class="embed-responsive embed-responsive-16by9" style="background-color:white; border:thick white solid">
+    <iframe id="video" class="embed-responsive-item" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GP7zpyx/senior-woman-speaks-to-camera-for-video-chat-or-video-call_njioxvcq__PS.mp4"
+     style="border:thin black solid; border-radius:15px;" allowfullscreen></iframe>
 
 </div>
 
 <!-- 4:3 aspect ratio -->
+<div class="col-md-4">
+<video id="gum local" autoplay="" style="height:190px;width:400px" class="demo2"></video>
+<div id="errorMsg"></div>
+
 <div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GP7zpyx/senior-woman-speaks-to-camera-for-video-chat-or-video-call_njioxvcq__PS.mp4" style="border:none"></iframe>
+<iframe id="video" class="embed-responsive-item img-responsive" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/GP7zpyx/senior-woman-speaks-to-camera-for-video-chat-or-video-call_ekxczvac__PS.mp4" style="height:100px;width:175px;margin-top:70px;border:thin black solid; border-radius:15px" allowfullscreen></iframe>
+<div class="embed-responsive">
+<iframe id="video" class="embed-responsive-item img-responsive" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/FyKJcnp/video-chat-with-african-american-doctor_njnz06ybl__PM.mp4"style="height:100px;width:175px;margin-top:70px;border:thin black solid; border-radius:15px" allowfullscreen></iframe>
+
 </div>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
 
 
 </div>
@@ -395,7 +423,11 @@ function errorMsg(msg, error) {
   errorElement.innerHTML += '<p>' + msg + '</p>';
 }</script>
 
-
+<script>
+document.getElementById('playVid').onclick = function (){
+    document.getElementById('video').play();
+};
+</script>
 </body>
 
 </html> 
