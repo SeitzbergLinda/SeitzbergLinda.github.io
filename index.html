@@ -72,16 +72,13 @@ p
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
 }
-
 .slideInLeft {
   animation-name: slideInLeft;
 }
-
 .img-hover img {
     -webkit-transition: all .3s ease; /* Safari and Chrome */
 f  	-moz-transition: all .3s ease; /* Firefox */
@@ -108,9 +105,27 @@ f    -ms-transform:scale(2); /* IE 9 */
 </style>
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
-  		<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-example">
-  			<a class="navbar-brand" href="#" style="height:50px:border:none;">
-        <img alt="Linda Seitzberg" src="" style="color:white; font-family:Cookie; font-size:45px;text-shadow: 4px 4px 4px #aaa;margin-left:50px; border:black">  
+  	
+  	
+  	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+     
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-example">
+  		
+  		
 </a>
     <ul class="nav nav-tabs" role="tablist" style="font-family: 'Oxygen', sans-serif; font-size:20px; margin-left:30px; border:black">
      <li> <a href="#Portfolio" style="color:rgb(20, 148, 221);">Portfolio</a></li>
@@ -118,9 +133,16 @@ f    -ms-transform:scale(2); /* IE 9 */
               <li><a href="https://usabilityconsulting.wordpress.com/" style="color:white">Blogg</a></li>
 
              <li><a href="#Kontakt" style="color:#3bb300">Kontakt</a></li>
-    <li><a href="https://se.linkedin.com/in/linda-seitzberg-9b5349bb" class="navbar-brand" style="margin-left:75px;float:right"> <img src="http://i.imgur.com/x2DlbqI.png?1" style="float:right;border-radius:10px;box-shadow:5px 5px 10px rgba(0,0,0, 0.5)"/></a></li>
+    <li><a href="https://se.linkedin.com/in/linda-seitzberg-9b5349bb" class="navbar-brand" style="float:right"> <img src="http://i.imgur.com/x2DlbqI.png?1" style="float:right;border-radius:10px;box-shadow:5px 5px 10px rgba(0,0,0, 0.5)"/></a></li>
 <i class="fa fa-phone navbar-brand" style="color:rgb(236, 167, 195); margin-left:15px;float:right"> +46 (0)73 633 18 04</i></ul>
  </nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  	
+  	
+  		
+  				
   
    <div class="jumbotron" style="background-image:url('http://i.imgur.com/nqVyxO2.jpg?1'); margin-top:0px;background-repeat:no-repeat; height:320px; background-color: #BAD1BA;
 border-radius: 20px;box-shadow: 5px 5px 10px rgba(0,0,0, 0.5)">
@@ -413,7 +435,6 @@ $('#knack').hover(function(){
 <script>
 // Changing the defaults
 window.sr = ScrollReveal({ reset: true });
-
 // Customizing a reveal set
 sr.reveal('.foo', { duration: 2000 });</script>
 </body>
