@@ -83,11 +83,7 @@ function create() {
         star.body.gravity.y = 200;
         star.body.bounce.y = 0.3 + Math.random() * 0.5;
     }
-if (score == 18)
-        {
-            window.alert('You got it!!!!');
-            scoreText.text = 'Mycket bra jobbat ';
-        }
+
 
     //  The score
     scoreText = game.add.text(16, 16, 'Morötter: 0', { fontSize: '32px', fill: '#FF8C00' });
