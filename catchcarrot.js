@@ -145,8 +145,8 @@ function collectStar (player, star) {
     scoreText.text = 'Samlade morötter: ' + score;
 if (score == 18)
         {
-            window.alert('You got it!!!!');
-            scoreText.text = 'Mycket bra jobbat ';
+            window.alert('You got it!');
+            scoreText.text = 'Mycket bra jobbat!';
         }
 
 }
